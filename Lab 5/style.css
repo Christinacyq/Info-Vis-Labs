@@ -1,0 +1,20 @@
+.axis-label {
+    text-anchor: middle;
+    font-size: 12px;
+    font-weight: semibold;
+}
+
+body {
+    font-family: "Open Sans";
+    margin: 0;
+}
+
+.letter-label {
+    text-anchor:left;
+    font-size: 12px;
+    font-weight: semibold;
+}
+
+#main {
+    margin: 20px;
+}
