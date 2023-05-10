@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7D</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div>
+        <h2>Movie Scartterplot</h2>
+        <label for="xSelect"> X-Axis: </label>
+        <select id="xSelect" onchange="onXChanged()">
+            <option selected value="duration">Duration</option>
+            <option value="aspect_ratio">Aspect Ratio</option>
+            <option value="budget">Budget</option>
+            <option value="gross">Gross</option>
+            <option value="imdb_score">IMDB Score</option>
+            <option value="num_user_for_reviews">Number of Users for Reviews</option>
+            <option value="facenumber_in_poster">Number of Faces in Poster</option>
+            <option value="num_voted_users">Number of Voted Users</option>
+        </select>  
+
+        <label for="ySelect"> Y-Axis: </label>
+        <select id="ySelect" onchange="onYChanged()">
+            <option value="duration">Duration</option>
+            <option value="aspect_ratio">Aspect Ratio</option>
+            <option value="budget">Budget</option>
+            <option value="gross">Gross</option>
+            <option selected value="imdb_score">IMDB Score</option>
+            <option value="num_user_for_reviews">Number of Users for Reviews</option>
+            <option value="facenumber_in_poster">Number of Faces in Poster</option>
+            <option value="num_voted_users">Number of Voted Users</option>
+        </select> 
+
+        <label for="yearSelect"> Year Filter: </label>
+        <select id="yearSelect" onchange="onYearChanged()">
+            <option selected value="all">All</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+        </select>  
+    </div>
+    <div id ='main'>
+        <svg id="scartterplot" width="850" height="700">
+        </svg>
+        <svg id = "legend" width = '100' height = '700'>
+        </svg>
+    </div>
+    
+</body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./d3-tip.js"></script>
+<script src="./main.js"></script>
+</html>
