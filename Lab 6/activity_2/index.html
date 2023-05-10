@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - Brush & Link Activity 4</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <svg id="scartterplot" width="500" height="500" style="border: 1px solid #777;">
+        </svg>
+        <svg id ="barchart" width="500" height="500" style="border: 1px solid #777;">
+        </svg>
+    </div>
+
+    <div>
+        <label for="xSelect"> X-Axis: </label>
+        <select id="xSelect" onchange="onCategoryChanged()">
+            <option value="cylinders">cylinders</option>
+            <option value="economy (mpg)">economy (mpg)</option>
+            <option value="displacement (cc)">displacement (cc)</option>
+            <option value="power (hp)">power (hp)</option>
+            <option value="weight (lb)">weight (lb)</option>
+            <option value="0-60 mph (s)">0-60 mph (s)</option>
+            <option value="year">year</option>
+        </select>  
+
+        <label for="ySelect"> Y-Axis: </label>
+        <select id="ySelect" onchange="onCategoryChanged()">
+            <option value="cylinders">cylinders</option>
+            <option value="economy (mpg)">economy (mpg)</option>
+            <option value="displacement (cc)">displacement (cc)</option>
+            <option selected value="power (hp)">power (hp)</option>
+            <option value="weight (lb)">weight (lb)</option>
+            <option value="0-60 mph (s)">0-60 mph (s)</option>
+            <option value="year">year</option>
+        </select>  
+    </div>
+    
+</body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./d3-tip.js"></script>
+<script src="./main.js"></script>
+</html>
